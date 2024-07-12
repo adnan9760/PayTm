@@ -28,7 +28,7 @@ const Sign = () => {
       
        
       
-        fetch("http://localhost:3000/user/signup", {
+        fetch("https://paytm-backend-1-ewtn.onrender.com/user/signup", {
           method: "POST",
           body: JSON.stringify(
               requestData
@@ -69,7 +69,7 @@ const Sign = () => {
             <button
               type="submit"
               onClick={() => {
-                fetch("http://localhost:3000/user/SendOTP", {
+                fetch("https://paytm-backend-1-ewtn.onrender.com/user/SendOTP", {
                   method: "POST",
                   body: JSON.stringify({
                     userName
