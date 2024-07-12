@@ -27,7 +27,7 @@ const Login = () => {
         }}  lable={"Password"} placeholder={"khan@33"} type={"password"}></InputBox>
         <Button lable={"Sign In"} onClick={
           ()=>{
-            fetch("http://localhost:3000/user/login", {
+            fetch("https://paytm-backend-1-ewtn.onrender.com/user/login", {
               method: "POST",
               body: JSON.stringify({
                 userName,
