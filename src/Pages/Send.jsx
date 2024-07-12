@@ -55,7 +55,7 @@ const Send = () => {
               />
             </div>
             <button onClick={()=>{
-              axios.post("http://localhost:3000/account/transfer",
+              axios.post("https://paytm-backend-1-ewtn.onrender.com/account/transfer",
                 Requestdata
               ,{
                 headers:{
