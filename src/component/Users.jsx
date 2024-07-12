@@ -11,7 +11,7 @@ export const Users = () => {
   ]);
   
   useEffect(()=>{
-     axios.get("http://localhost:3000/user/bulk?filter=" + filter).then(response=>{
+     axios.get("https://paytm-backend-1-ewtn.onrender.com/user/bulk?filter=" + filter).then(response=>{
       setUsers(response.data.users);
      })
   },[filter])
