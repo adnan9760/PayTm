@@ -14,7 +14,7 @@ const Dashboard = () => {
       return;
     }
   useEffect(()=>{
-    axios.get("http://localhost:3000/account/balance",
+    axios.get("https://paytm-backend-1-ewtn.onrender.com/account/balance",
     {
       headers:{
         Authorization:"Bearer " + token
@@ -27,7 +27,7 @@ const Dashboard = () => {
   },[balance])
 
   useEffect(()=>{
-    axios.get("http://localhost:3000/account/Detail",
+    axios.get("https://paytm-backend-1-ewtn.onrender.com/account/Detail",
       
     {
       headers:{
